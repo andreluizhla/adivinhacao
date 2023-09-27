@@ -87,6 +87,7 @@
         var acerto = false
         var tentativas = document.getElementById('tentativas')
         var numerosTent = []
+        console.log(num.value, numPensa, cont, numerosTent)
 
         function verificEnter(event) {
             if (event.key === 'Enter'){
@@ -102,10 +103,10 @@
             acerto = false
             numerosTent = []
             tentativas.innerHTML = '<p>Tentativas: </p>'
+            console.log(num.value, numPensa, cont, numerosTent)
         }
 
         function verificar(){
-            console.log(num.value, numPensa, cont, numerosTent)
             if (acerto == false){ 
                 if (num.value === ''){
                     res.innerHTML = '<p class="errado">[ERRO] Digite um número</p>'
